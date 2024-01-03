@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(4, 57, 58);
+}
+
+h1{ 
+    color: #f5d38e;
+    margin: 18px;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Fondamento', cursive;
+    font-family: 'Lora', serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+nav a:hover{
+    color: #f2c66d;
+    justify-content: flex-end;
+}
+
+h2{
+    width: 537px;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    line-height: 94px;
+    color: #f5d38e;
+    font-family: 'Comic Neue', cursive; /*preg si puedo usar la fuente de letra una vez*/
+    font-family: 'Fondamento', cursive;
+    font-family: 'Lora', serif;
+}
+
+main button{
+    display: inline-flex;
+    padding: 12px 59px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 26px;
+    border: 1px solid #f3f3f5;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.shoppingcar, .iconoseccion {
+    width: 20px;
+    height: 18px;
+}
+
+.primeraimagen{
+    width: 407px;
+    height: 543px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+}
+
+
+
