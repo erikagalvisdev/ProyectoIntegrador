@@ -85,7 +85,9 @@ main button{
     right: 20%;
     bottom: 0;
 }
-
+.vector{
+    position: absolute;
+}
 
 
 
