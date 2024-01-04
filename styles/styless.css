@@ -27,14 +27,24 @@ nav a{
     text-decoration: none;
     padding: 7px;
     cursor: pointer;
-    justify-content: flex-end;
+    flex-shrink: 0;
 }
 
 nav a:hover{
     color: #f2c66d;
     justify-content: flex-end;
 }
-
+.nav__rectangle{
+    position: relative;
+    width: 70px;
+    height: 4px;
+    top: 39px;
+    left: 0;
+    background-color: #f2c66d;
+    border-radius: 2px;
+    margin-left: 762px;
+    margin-top: 8px;
+}
 h2{
     width: 537px;
     font-weight: 400;
@@ -75,6 +85,7 @@ main button{
     right: 20%;
     bottom: 0;
 }
+
 
 
 
