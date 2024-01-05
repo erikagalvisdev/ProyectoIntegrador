@@ -1,91 +1,103 @@
-*{
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;500;600&family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(4, 57, 58);
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-h1{ 
-    color: #f5d38e;
-    margin: 18px;
-    font-family: 'Comic Neue', cursive;
-    font-family: 'Fondamento', cursive;
-    font-family: 'Lora', serif;
+.section1 {
+  background-color: #093931;
+  background-image: url(/assets/olas_\ blancas.png);
+  
+}
+h1 {
+  color: #f5d38e;
+  margin: 18px;
+  font-family: "Comic Neue", cursive;
+  font-family: "Fondamento", cursive;
+  font-family: "Lora", serif;
 }
 
-header{
-    display: flex;
-    justify-content: space-around;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*width: 1440px;
+  height: 62px;*/
+}
+.menu {
+  padding-right: 6rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1.5rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 100;
 }
 
-nav a{
-    color: #fff;
-    text-decoration: none;
-    padding: 7px;
-    cursor: pointer;
-    flex-shrink: 0;
-}
-
-nav a:hover{
-    color: #f2c66d;
-    justify-content: flex-end;
-}
-.nav__rectangle{
-    position: relative;
-    width: 70px;
-    height: 4px;
-    top: 39px;
-    left: 0;
-    background-color: #f2c66d;
-    border-radius: 2px;
-    margin-left: 762px;
-    margin-top: 8px;
+nav a:hover {
+  color: #f2c66d;
+  justify-content: flex-end;
 }
 h2{
-    width: 537px;
-    font-weight: 400;
-    font-size: 50px;
-    font-style: normal;
-    line-height: 94px;
-    color: #f5d38e;
-    font-family: 'Comic Neue', cursive; /*preg si puedo usar la fuente de letra una vez*/
-    font-family: 'Fondamento', cursive;
-    font-family: 'Lora', serif;
+  width: 537px;
+  font-weight: 400;
+  font-size: 50px;
+  font-style: normal;
+  line-height: 94px;
+  color: #f5d38e;
+  font-family: "Comic Neue", cursive; /*preg si puedo usar la fuente de letra una vez*/
+  font-family: "Fondamento", cursive;
+  font-family: "Lora", serif;
+ 
 }
 
-main button{
-    display: inline-flex;
-    padding: 12px 59px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 26px;
-    border: 1px solid #f3f3f5;
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 1.7rem;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+main button {
+  display: inline-flex;
+  padding: 12px 59px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  border: 1px solid #f3f3f5;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
-.shoppingcar, .iconoseccion {
-    width: 20px;
-    height: 18px;
+.shoppingcar,
+.iconoseccion {
+  width: 20px;
+  height: 18px;
 }
-
 .primeraimagen{
     width: 407px;
     height: 543px;
-    flex-shrink: 0;
+    flex-shrink: 1;
     border-radius: 8px;
     position: absolute;
     right: 20%;
-    bottom: 0;
+    top:110px;
+}
+.segundaimagen{
+  width: 241px;
+  height: 321px;
+  flex-shrink: 0;
+  border-radius: 121px 121px 0px 0px;
+  position: absolute;
+  right: 10%;
+  top: 225px;
 }
 
-
-
-
+.img-vector img {
+  width: 100%;
+}
