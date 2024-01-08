@@ -9,11 +9,13 @@ body {
   margin: 0;
   padding: 0;
 }
-
+header {
+  background-color: #093931;
+}
 .section1 {
+  height: 100vh;
   background-color: #093931;
   background-image: url(/assets/olas_\ blancas.png);
-  
 }
 h1 {
   color: #f5d38e;
@@ -25,14 +27,12 @@ h1 {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   /*width: 1440px;
   height: 62px;*/
 }
-.menu {
-  padding-right: 6rem;
-}
+
 nav a {
   color: #fff;
   text-decoration: none;
@@ -47,7 +47,7 @@ nav a:hover {
   color: #f2c66d;
   justify-content: flex-end;
 }
-h2{
+h2 {
   width: 537px;
   font-weight: 400;
   font-size: 50px;
@@ -57,9 +57,11 @@ h2{
   font-family: "Comic Neue", cursive; /*preg si puedo usar la fuente de letra una vez*/
   font-family: "Fondamento", cursive;
   font-family: "Lora", serif;
- 
 }
-
+.container-title {
+  padding-left: 17%;
+  padding-top: 12%;
+}
 main button {
   display: inline-flex;
   padding: 12px 59px;
@@ -79,25 +81,59 @@ main button {
   width: 20px;
   height: 18px;
 }
-.primeraimagen{
-    width: 407px;
-    height: 543px;
-    flex-shrink: 1;
-    border-radius: 8px;
-    position: absolute;
-    right: 20%;
-    top:110px;
+.icono-services {
+  width: 50px;
+  height: auto;
 }
-.segundaimagen{
+.primeraimagen {
+  width: 407px;
+  height: 543px;
+  flex-shrink: 1;
+  border-radius: 8px;
+  position: absolute;
+  right: 20%;
+  top: 25%;
+}
+.segundaimagen {
   width: 241px;
   height: 321px;
   flex-shrink: 0;
   border-radius: 121px 121px 0px 0px;
   position: absolute;
-  right: 10%;
-  top: 225px;
+  right: 13%;
+  top: 40%;
 }
 
 .img-vector img {
   width: 100%;
 }
+.menu a:hover,
+.menu a.active {
+  border-bottom: 3px solid #f2c66d;
+  padding-bottom: 8px;
+  color: #f2c66d;
+}
+/* Section 2 */
+#section2 {
+  height: 100vh;
+}
+
+.container-services {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  padding-top: 3%;
+}
+.card-service {
+  display: flex;
+  width: 350px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-service .p-information {
+  color: #9095a0;
+  text-align: center;
+}
+
