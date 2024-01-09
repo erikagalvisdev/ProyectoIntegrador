@@ -137,12 +137,23 @@ main button {
   text-align: center;
 }
 /*segunda parte de la section 2*/
+
 .container-featured {
+  position: relative;
   display: flex;
-  justify-content: space-evenly;
-  color: #ffffff;
+  justify-content: center;
+  margin: ;
 }
-.container-enunciado h3 {
+.container-enunciado {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-right: 132px; /* Espacio entre el área de enunciado y las tarjetas */
+  bottom: -48px;
+}
+. .container-enunciado h3 {
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -166,10 +177,21 @@ main button {
   border-color: #0d554a;
   color: #0d554a;
 }
-.card-sliderP * {
-  flex-shrink: 0;
-  border: 1px solid #ccc;
+
+.card-sliderP {
+  position: relative;
+  width: 300px; /* Ancho de cada tarjeta */
+  background-color: #fff;
   border-radius: 8px;
-  color: red;
-  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 20px; /* Espacio entre las tarjetas */
+  bottom: -48px;
+  text-align: center;
+}
+.img-slider {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; /* Bordes redondeados para la imagen */
 }
