@@ -48,7 +48,6 @@ nav a:hover {
   justify-content: flex-end;
 }
 h2 {
-  width: 537px;
   font-weight: 400;
   font-size: 50px;
   font-style: normal;
@@ -243,10 +242,10 @@ main button {
 }
 
 /*section4*/
-#section4{
+#section4 {
   height: 80vh;
 }
-.container-jewelry{
+.container-jewelry {
   position: relative;
   display: flex;
   justify-content: center;
@@ -301,4 +300,52 @@ main button {
   max-width: 100%;
   height: auto;
   border-radius: 4px; /* Bordes redondeados para la imagen */
+}
+/* Footer styles */
+.information-containerF {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #093931;
+  color: white;
+}
+.items-pages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  list-style: none;
+}
+
+.icons-container {
+  background-color: #093931;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12%;
+  padding-right: 12%;
+  color: white;
+}
+.search {
+  margin-top: 10px;
+}
+.search input {
+  border: 1px white solid;
+  background-color: #093931;
+  padding: 7px 132px 6px 12px;
+  border-radius: 18px 0px 0px 18px;
+  margin-right: -10px;
+}
+.search input::placeholder {
+  color: white;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Manrope", sans-serif;
+}
+.search button {
+  border: none;
+  color: #6B4A09;
+  font-size: 14px;
+  background-color: #f2c66d;
+  text-align: center;
+  padding: 7px 24px 7px 24px;
+  border-radius: 0px 18px 18px 0px;
 }
