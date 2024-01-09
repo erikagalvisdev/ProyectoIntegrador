@@ -1,112 +1,304 @@
-*{
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;500;600&family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(4, 57, 58);
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #093931;
+}
+.section1 {
+  height: 100vh;
+  background-color: #093931;
+  background-image: url(/assets/olas_\ blancas.png);
+}
+h1 {
+  color: #f5d38e;
+  margin: 18px;
+  font-family: "Comic Neue", cursive;
+  font-family: "Fondamento", cursive;
+  font-family: "Lora", serif;
 }
 
-h1{ 
-    color: #f5d38e;
-    margin: 18px;
-    font-family: 'Comic Neue', cursive;
-    font-family: 'Fondamento', cursive;
-    font-family: 'Lora', serif;
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*width: 1440px;
+  height: 62px;*/
 }
 
-header{
-    display: flex;
-    justify-content: space-around;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1.5rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 100;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
+nav a:hover {
+  color: #f2c66d;
+  justify-content: flex-end;
+}
+h2 {
+  width: 537px;
+  font-weight: 400;
+  font-size: 50px;
+  font-style: normal;
+  line-height: 94px;
+  color: #f5d38e;
+  font-family: "Comic Neue", cursive; /*preg si puedo usar la fuente de letra una vez*/
+  font-family: "Fondamento", cursive;
+  font-family: "Lora", serif;
+}
+.container-title {
+  padding-left: 17%;
+  padding-top: 12%;
+}
+main button {
+  display: inline-flex;
+  padding: 12px 59px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  border: 1px solid #f3f3f5;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
-nav a{
-    color: #fff;
-    text-decoration: none;
-    padding: 7px;
-    cursor: pointer;
-    flex-shrink: 0;
+.shoppingcar,
+.iconoseccion {
+  width: 20px;
+  height: 18px;
+}
+.icono-services {
+  width: 50px;
+  height: auto;
+}
+.primeraimagen {
+  width: 407px;
+  height: 543px;
+  flex-shrink: 1;
+  border-radius: 8px;
+  position: absolute;
+  right: 20%;
+  top: 25%;
+}
+.segundaimagen {
+  width: 241px;
+  height: 321px;
+  flex-shrink: 0;
+  border-radius: 121px 121px 0px 0px;
+  position: absolute;
+  right: 13%;
+  top: 40%;
 }
 
-nav a:hover{ 
-    color: #f2c66d;
-    justify-content: flex-end;
+.img-vector img {
+  width: 100%;
+}
+.menu a:hover,
+.menu a.active {
+  border-bottom: 3px solid #f2c66d;
+  padding-bottom: 8px;
+  color: #f2c66d;
+}
+/* Section 2 */
+#section2 {
+  height: 80vh;
 }
 
-.nav__rectangle{
-        position: relative;
-        width: 70px;
-        height: 1px;
-        top: 39px;
-        left: 0;
-        border: 1px solid #f2c66d;
-        border-radius: 2px;
-        margin-left: 762px;
-        margin-top: 8px;
+.container-services {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  padding-top: 3%;
+}
+.card-service {
+  display: flex;
+  width: 350px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-h2{
-    width: 537px;
-    font-weight: 400;
-    font-size: 50px;
-    font-style: normal;
-    line-height: 94px;
-    color: #f5d38e;
-    font-family: 'Comic Neue', cursive; 
-    font-family: 'Fondamento', cursive;
-    font-family: 'Lora', serif;
+.card-service .p-information {
+  color: #9095a0;
+  text-align: center;
+}
+/*segunda parte de la section 2*/
+
+.container-featured {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.container-enunciado {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-right: 132px; /* Espacio entre el área de enunciado y las tarjetas */
+  bottom: -48px;
+}
+. .container-enunciado h3 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  color: #0d554a;
+}
+.container-enunciado p {
+  color: #9095a0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.container-enunciado button {
+  display: inline-flex;
+  padding: 12px 59px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  border: 1px solid;
+  border-color: #0d554a;
+  color: #0d554a;
 }
 
-main button{
-    display: inline-flex;
-    padding: 12px 59px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 26px;
-    border: 1px solid #f3f3f5;
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 1.7rem;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+.card-sliderP {
+  position: relative;
+  width: 300px; /* Ancho de cada tarjeta */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 20px; /* Espacio entre las tarjetas */
+  bottom: -48px;
+  text-align: center;
+}
+.img-slider {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; /* Bordes redondeados para la imagen */
 }
 
-.shoppingcar, .iconoseccion {
-    width: 20px;
-    height: 18px;
+.title-container h2 {
+  color: #0d554a;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
 }
 
-.primeraimagen{
-    width: 407px;
-    height: 543px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    position: absolute;
-    right: 20%;
-    bottom: 0;
+.collections-container {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  justify-content: center;
+  gap: 35px;
+}
+.card-collection {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+.card-collection:hover {
+  transform: scale(1.1);
+}
+.img-collection {
+  border-radius: 10px;
+}
+.title-collection {
+  position: absolute;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 100;
+  left: 25%;
+  top: 80%;
+}
+.btn-shopContainer {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  padding: 12px 59px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  border: 1px solid;
+  border-color: #0d554a;
+  color: #0d554a;
 }
 
-.segundaimagen{
-    width: 241px;
-    height: 321px;
-    flex-shrink: 0;
-    border-radius: 121px 121px 0px 0px;
-   position: absolute;
-    right: 10%;
-    top: 275px;
+/*section4*/
+#section4{
+  height: 80vh;
+}
+.container-jewelry{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.container-joyas {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-right: 132px; /* Espacio entre el área de enunciado y las tarjetas */
+  bottom: -48px;
+}
+. .container-joyas h3 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  color: #0d554a;
+}
+.container-joyas p {
+  color: #9095a0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.container-joyas button {
+  display: inline-flex;
+  padding: 12px 59px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  border: 1px solid;
+  border-color: #0d554a;
+  color: #0d554a;
 }
 
-.vector{
-    position: absolute;
+.card-sliderp2 {
+  position: relative;
+  width: 300px; /* Ancho de cada tarjeta */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 20px; /* Espacio entre las tarjetas */
+  bottom: -48px;
+  text-align: center;
 }
-
-
-
-
+.img-sliderp2 {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; /* Bordes redondeados para la imagen */
+}
