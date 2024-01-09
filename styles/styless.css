@@ -115,7 +115,7 @@ main button {
 }
 /* Section 2 */
 #section2 {
-  height: 100vh;
+  height: 80vh;
 }
 
 .container-services {
@@ -142,7 +142,6 @@ main button {
   position: relative;
   display: flex;
   justify-content: center;
-  margin: ;
 }
 .container-enunciado {
   position: relative;
@@ -194,4 +193,58 @@ main button {
   max-width: 100%;
   height: auto;
   border-radius: 4px; /* Bordes redondeados para la imagen */
+}
+#section3 {
+  height: 80vh;
+  background-color: #fff;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+.title-container h2 {
+  color: #0d554a;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+}
+
+.collections-container {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  justify-content: center;
+  gap: 35px;
+}
+.card-collection {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+.card-collection:hover {
+  transform: scale(1.1);
+}
+.img-collection {
+  border-radius: 10px;
+}
+.title-collection {
+  position: absolute;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 100;
+  left: 25%;
+  top: 80%;
+}
+.btn-shopContainer {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  padding: 12px 59px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  border: 1px solid;
+  border-color: #0d554a;
+  color: #0d554a;
 }
