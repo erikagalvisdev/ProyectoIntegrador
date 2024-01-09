@@ -151,7 +151,7 @@ main button {
   margin-right: 132px; /* Espacio entre el área de enunciado y las tarjetas */
   bottom: -48px;
 }
-. .container-enunciado h3 {
+.container-enunciado h3 {
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -259,7 +259,7 @@ main button {
   margin-right: 132px; /* Espacio entre el área de enunciado y las tarjetas */
   bottom: -48px;
 }
-. .container-joyas h3 {
+.container-joyas h3 {
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -342,7 +342,7 @@ main button {
 }
 .search button {
   border: none;
-  color: #6B4A09;
+  color: #6b4a09;
   font-size: 14px;
   background-color: #f2c66d;
   text-align: center;
