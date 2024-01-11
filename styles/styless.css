@@ -3,9 +3,7 @@
 * {
   box-sizing: border-box;
 }
-/*@media screen and (max width{
-  
-}*/
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -58,6 +56,20 @@ h2 {
   font-family: "Comic Neue", cursive; /*preg si puedo usar la fuente de letra una vez*/
   font-family: "Fondamento", cursive;
   font-family: "Lora", serif;
+}
+.iconoseccion {
+  margin-left: 10px;
+}
+
+.shoppingcar {
+  margin-left: 10px;
+}
+
+.container-iconhamburger {
+  margin-left: 200px;
+}
+.container-iconhamburger {
+  display: none;
 }
 .container-title {
   padding-left: 17%;
@@ -370,4 +382,12 @@ main button {
   border-radius: 8px;
   margin-right: 70px;
   margin-left: 70px;
+}
+@media screen and (max-width: 767px) {
+  header nav {
+    display: none;
+  }
+  .container-iconhamburger {
+    display: block;
+  }
 }
