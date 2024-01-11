@@ -383,7 +383,56 @@ main button {
   margin-right: 70px;
   margin-left: 70px;
 }
-@media screen and (max-width: 767px) {
+#section6 {
+  height: 50;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #093931;
+}
+
+/*#section6 h2 {
+  position: relative;
+  margin: 132px;
+  color: #fff;
+  font-family: Cormorant Garamond;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 68px;
+}*/
+.enunciado p {
+  position: relative;
+  top: 0px;
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.imagenfinal {
+  width: 300px;
+  height: 375px;
+  flex-shrink: 0;
+}
+.parrafoImg {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  width: 324px;
+}
+
+.iconosA {
+  width: 31px;
+  height: 31px;
+  flex-shrink: 0;
+}
+
+*@media screen and (max-width: 767px) {
   header nav {
     display: none;
   }
