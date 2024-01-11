@@ -127,9 +127,9 @@ main button {
   color: #f2c66d;
 }
 /* Section 2 */
-#section2 {
-  /*height: 80vh;*/
-}
+/*#section2 {
+  /*height: 80vh;
+}*/
 
 .container-services {
   display: flex;
@@ -257,9 +257,9 @@ main button {
 }
 
 /*section4*/
-#section4 {
-  /*height: 50vh;*/
-}
+/*#section4 {
+  /*height: 50vh;
+}*/
 .container-jewelry {
   position: relative;
   display: flex;
@@ -364,9 +364,9 @@ main button {
   padding: 7px 24px 7px 24px;
   border-radius: 0px 18px 18px 0px;
 }
-#section5 {
-  /*height: 80vh;*/
-}
+/*#section5 {
+  /*height: 80vh;
+}*/
 .container-tittleOur h2 {
   text-align: center;
   color: #0d554a;
