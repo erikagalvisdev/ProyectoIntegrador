@@ -14,6 +14,7 @@ header {
 }
 .section1 {
   height: 100vh;
+  width: 100%;
   background-color: #093931;
   background-image: url(/assets/olas_\ blancas.png);
 }
@@ -73,7 +74,8 @@ h2 {
 }
 .container-title {
   padding-left: 17%;
-  padding-top: 12%;
+  padding-top: 9%;
+  line-height: 2;
 }
 main button {
   display: inline-flex;
@@ -98,9 +100,19 @@ main button {
   width: 50px;
   height: auto;
 }
+
+.container-section1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.section1-imagenes {
+  width: 700px;
+}
+
 .primeraimagen {
-  width: 407px;
-  height: 543px;
+  width: 25%;
   flex-shrink: 1;
   border-radius: 8px;
   position: absolute;
@@ -108,8 +120,8 @@ main button {
   top: 25%;
 }
 .segundaimagen {
-  width: 241px;
   height: 321px;
+  width: 16%;
   flex-shrink: 0;
   border-radius: 121px 121px 0px 0px;
   position: absolute;
@@ -536,8 +548,127 @@ main button {
   width: 100%;
   padding: 20px;
 }
+.container-section6 {
+  padding-left: 34px;
+}
+.information-containerF {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container-barrab {
+  padding: 10px;
+}
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 20px;
+}
 }
 
+     /*--Celular--*/
+@media screen and (max-width: 576px) {
+  header {
+    width: 700px;
+  }
+  .container-iconhamburger {
+    display: block;
+  }
+  /*----Section1----*/
+  .container-section1 {
+    display: flex;
+    width: 700px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .section1 {
+    width: 700px;
+  }
+
+  .container-title {
+    width: 100%;
+  }
+
+  .texto-section1 {
+    text-align: center;
+  }
+  
+ /*----Section2----*/
+ #section2 {
+  width: 700px;
+ }
+.container-enunciado {
+  width: 700px;
+  margin-left:100px;
+}
+
+.card-sliderP {
+  width: 350px;
+}
+
+/*---section3---*/
+#section3 {
+  width: 700px;
+ }
+
+/*---Section4---*/
+#section4 {
+  width: 700px;
+ }
+
+.container-joyas {
+  width: 700px;
+  margin-left:100px;
+}
+/*---Section5---*/
+#section5 {
+  width: 700px;
+ }
+
+.container-tittleOur {
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.container-tittleOur h2 {
+  font-size: 30px;
+}
+
+/*----Section6----*/
+#section6 {
+  width: 700px;
+ }
+
+.fromthe h2 {
+  bottom: 30px;
+}
+.fromthe p {
+  bottom: 30px;
+}
+
+.container-section6 {
+  padding-left: 0px;
+}
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.iconosA  img{
+  width: 35px;
+  height: 35px;
+}
+.iconosA {
+  bottom: -30px;
+  padding-left: 300px;
+}
+/*----FOOTER----*/
+.section-footer {
+  width: 700px;
+ }
+}
 
 
 
