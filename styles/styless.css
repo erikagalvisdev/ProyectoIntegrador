@@ -396,17 +396,18 @@ main button {
 }
 .fromthe h2 {
   position: relative;
-  bottom: -80px;
+  bottom: -60px;
   color: #fff;
   font-family: Cormorant Garamond;
   font-size: 48px;
   font-style: normal;
   font-weight: 500px;
   line-height: 68px;
+ 
 }
 .fromthe p {
   position: relative;
-  bottom: -40px;
+  bottom: -20px;
   color: #fff;
   font-family: Manrope;
   font-size: 16px;
@@ -457,6 +458,7 @@ main button {
   padding-left: 200px;
 }
 
+
 @media screen and (max-width: 767px) {
   header nav {
     display: none;
@@ -464,4 +466,79 @@ main button {
   .container-iconhamburger {
     display: block;
   }
+  /*----Section1----*/
+  .section1 {
+    height: 180vh;
+  }
+  .container-title {
+    padding-left: 0%;
+    padding-top: 0%;
+    height: 180vh;
+  }
+  .texto-section1 {
+    position: relative;
+    top: 600px;
+    padding: 20px;
+  }
+  .section1-imagenes{
+    position: relative;
+    top: -420px;
+    height: 50vh;
+  }
+  .primeraimagen {
+    width: 400px;
+    height: 500px;
+  }
+  .segundaimagen {
+    width: 241px;
+    height: 321px;
+    margin-top: 20px;
+    right: 20px;
+  }
+ /*----Section2----*/
+ .container-services {
+  width: 100%;
+  flex-wrap: wrap;
 }
+.container-featured {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.collections-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  justify-content: center;
+}
+.img-collection {
+  width: 100%;
+}
+/*----Section3----*/
+.container-jewelry {
+  flex-wrap: wrap;
+  height: 100%;
+  gap: 10px;
+}
+
+.card-sliderp2 {
+  width: 350px; 
+  padding: 12px;
+}
+.img-sliderp2 {
+  width: 100%;
+}
+/*----Section6----*/
+.container-section6 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.fromthe {
+  width: 100%;
+  padding: 20px;
+}
+}
+
+
+
+
+
