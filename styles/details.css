@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #093931;
+  }
+  .section1 {
+    height: 100vh;
+    background-color: #093931;
+    background-image: url(/assets/olas_\ blancas.png);
+  }
+  h1 {
+    color: #f5d38e;
+    margin: 18px;
+    font-family: "Comic Neue", cursive;
+    font-family: "Fondamento", cursive;
+    font-family: "Lora", serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*width: 1440px;
+    height: 62px;*/
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 100;
+  }
+  
+  nav a:hover {
+    color: #f2c66d;
+    justify-content: flex-end;
+  }
+  h2 {
+    width: 537px;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    line-height: 94px;
+    color: #f5d38e;
+    font-family: "Comic Neue", cursive; /*preg si puedo usar la fuente de letra una vez*/
+    font-family: "Fondamento", cursive;
+    font-family: "Lora", serif;
+  }
+  .container-title {
+    padding-left: 17%;
+    padding-top: 12%;
+  }
