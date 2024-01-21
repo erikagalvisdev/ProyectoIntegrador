@@ -1,14 +1,12 @@
+       /*Section-1*/
 .container-pedido {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    /*display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
-    gap: 1rem;*/
   }
  
 .summary {
-    flex: 8;
+    flex: 3;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -24,17 +22,51 @@
     width: 100%;
   }
 
+  .container-Dpago {
+  border: solid red;
+  }
+
+  .container-Dpago h2{
+  color: black;
+  /*font-size: ;*/
+  }
+
+  .color-p {
+    color: lightseagreen;
+  }
+
+  .container-Dpago button {
+    border: solid rgb(115, 113, 113);
+    color:blueviolet;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .button-payment {
+    border-radius: 10px;
+  }
+
    /*Section-You may also like*/
 .container-other-options{
     width: 100%;
     display: flex;
 }
 
-.titulo-options {
+.contenido-options {
+  display: flex;
   width: 100%;
-display: flex;
-/*flex-direction: flex-end;*/
 }
+
+.contenido-options h2{
+  display: flex;
+  color: rgb(7, 88, 61);
+  text-align: start;
+}
+
+/*.contenido-options h2{
+  display: flex;
+  color: rgb(7, 88, 61);
+}*/
 
 .carrusel-1, .carrusel-2, .carrusel-3, .carrusel-4, .carrusel-5 {
   display: flex;
@@ -42,4 +74,5 @@ display: flex;
   justify-content: space-around;
   width: 100%;
 }
+
   
