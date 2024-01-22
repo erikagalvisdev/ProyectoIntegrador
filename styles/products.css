@@ -80,6 +80,9 @@
 .galeria1 {
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 .fila1 {
@@ -113,30 +116,20 @@
 .galeria2 {
   display: flex;
   flex-direction: column;
+  border: solid rgb(13, 9, 1);
 }
 
-.fila3 {
-  display: flex;
-  flex: 2;
-  align-items: flex-start;
-  border: solid red;
-}
-
-.fila4 { 
+.img1-gal2{
   display: flex;
   flex: 2;
   align-items: flex-start;
 }
 
-/*.img1-gal2{
-  
-}*/
+.img2-gal2{
 
-/*.fila4 {
-  display: flex;
-  justify-content: space-between;
- 
-}*/
+}
+
+
 
 .galeria2 h2 {
   color: #171a1f;
