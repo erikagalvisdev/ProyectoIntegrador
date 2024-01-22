@@ -8,7 +8,6 @@
 .summary {
     flex: 3;
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -108,31 +107,39 @@
 
    /*Section-You may also like*/
 .container-other-options{
-    width: 100%;
     display: flex;
+    /*flex-wrap: wrap;*/
+    width: 100%;
 }
 
 .contenido-options {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
-.contenido-options h2{
-  display: flex;
-  color: rgb(7, 88, 61);
-  text-align: start;
+.contenido-options h2 {
+  color: #093c96;
+  font-family: "Cormorant Garamond";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  border: solid blue;
 }
 
-/*.contenido-options h2{
-  display: flex;
-  color: rgb(7, 88, 61);
-}*/
+.contenido-options p {
+  padding-left: 95%;
+  /*margin-top: 10px;*/
+}
 
 .carrusel-1, .carrusel-2, .carrusel-3, .carrusel-4, .carrusel-5 {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  padding-left: 100px;
   width: 100%;
 }
+
+
+
+
 
   
