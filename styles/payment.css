@@ -108,7 +108,6 @@
    /*Section-You may also like*/
 .container-other-options{
     display: flex;
-    /*flex-wrap: wrap;*/
     width: 100%;
 }
 
@@ -119,24 +118,23 @@
 }
 
 .contenido-options h2 {
-  color: #093c96;
+  color: #0D554A;
   font-family: "Cormorant Garamond";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
-  border: solid blue;
 }
 
 .contenido-options p {
   padding-left: 95%;
-  /*margin-top: 10px;*/
 }
 
 .carrusel-1, .carrusel-2, .carrusel-3, .carrusel-4, .carrusel-5 {
   padding-left: 100px;
   width: 100%;
 }
+
 
 
 
