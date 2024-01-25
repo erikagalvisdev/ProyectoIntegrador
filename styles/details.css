@@ -61,8 +61,8 @@ h2 {
   padding-top: 12%;
 }
 .container_detail {
-  /*height: 80vh;*/
-  width: 100%;
+  
+  width: 100vw;
 }
 .arrow {
   display: flex;
@@ -96,7 +96,7 @@ h2 {
   border-radius: 4px;
 }
 .img_c {
-  width: 64px;
+  /*width: 64px;*/
   height: 82px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -358,6 +358,122 @@ h2 {
   height: 581px;
   flex-shrink: 0;
   border-radius: 8px;
+}
+#section2{
+  width: 100vw;
+  height:90vh;
+}
+.container-services {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  padding-top: 3%;
+  margin-bottom: 80px;
+}
+.card-service {
+  display: flex;
+  width: 350px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-service .p-information {
+  color: #9095a0;
+  text-align: center;
+}
+/*segunda parte de la section 2*/
+
+.container-featured {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+}
+.container-enunciado {
+  position: relative;
+  margin-left: -60px;
+}
+.container-enunciado h1 {
+  position: absolute;
+  margin-top: -30px;
+  color: #0d554a;
+  font-family: "Cormorant Garamond";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  white-space: nowrap;
+}
+
+.card-sliderP {
+  position: relative;
+  margin-right: 150px;
+  width: 300px; /* Ancho de cada tarjeta */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 20px; /* Espacio entre las tarjetas */
+  bottom: -48px;
+  text-align: center;
+}
+.img-slider {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; /* Bordes redondeados para la imagen */
+}
+.img-slider {
+  width: 300px;
+  height: 300px;
+}
+.title-container h2 {
+  color: #0d554a;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  padding-top: 40px;
+}
+
+.collections-container {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  justify-content: center;
+  gap: 35px;
+}
+.card-collection {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+.card-collection:hover {
+  transform: scale(1.1);
+}
+.img-collection {
+  border-radius: 10px;
+}
+.title-collection {
+  position: absolute;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 100;
+  left: 25%;
+  top: 80%;
+}
+.btn-shopContainer {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  padding: 12px 59px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  border: 1px solid;
+  border-color: #0d554a;
+  color: #0d554a;
 }
 
 #section6 {
