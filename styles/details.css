@@ -60,73 +60,71 @@ h2 {
   padding-left: 17%;
   padding-top: 12%;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .container_detail {
-  
-  width: 100vw;
+  padding: 3vw;
+  margin-top: 3vw;
+}
+
+.details__s1 {
+  display: flex;
+  margin-top: 2vw;
+  gap: 2vw;
+}
+
+.icon {
+  width: 2vw;
+}
+.columna_Img {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vw;
+  flex-shrink: 0;
+  border-radius: 4px;
 }
 .arrow {
   display: flex;
-  gap: 20px;
-  margin-top: 4.25rem;
-  margin-left: 8.25rem;
+  gap: 0.5vw;
   font-family: "Cormorant Garamond";
   color: #0d554a;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.375rem;
+  align-items: center;
 }
-.icon {
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
-  margin-bottom: -5px;
-  margin-left: 15px;
+.arrow > img {
+  width: 1.5vw;
 }
-.columna_Img {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: space-between;
-  width: 4rem;
-  height: 5.125rem;
-  flex-shrink: 0;
-  margin-left: 8.25rem;
-  border-radius: 4px;
+.columna_Img > img {
+  width: 5vw;
 }
-.img_c {
-  /*width: 64px;*/
-  height: 82px;
-  flex-shrink: 0;
-  border-radius: 4px;
-}
+
 .imagen_Gra {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 477px;
-  height: 636px;
-  flex-shrink: 0;
-  margin-block-start: -97px;
-  margin-left: 206px;
-  margin-bottom: 70px;
+  width: 33%;
+
 }
-.heart {
-  position: relative;
-  width: 5px;
-  height: 5px;
-  flex-shrink: 0;
-  margin-block-start: -690px;
-  margin-left: 650px;
+
+.Gra__orange {
+  object-fit: cover;
+  width: 30vw;
 }
+
+.Gra__hearth {
+  position: absolute;
+  width: 1.5vw;
+  left: 90%;
+  top: 2%;
+}
+
 .information_D {
-  position: relative;
   display: flex;
   flex-direction: column;
-  gap: -1px;
-  margin-top: -35px;
-  margin-left: 731px;
+  gap: 1vw;
 }
 .tittle_charns {
   padding: 1px 1px 1px 1px;
@@ -135,19 +133,13 @@ h2 {
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
-  line-height: 56px;
-  margin-top: -15px;
-  margin-left: -2px;
 }
 .code {
-  position: relative;
   color: #323842;
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
-  margin-left: -2px;
 }
 .precio {
   color: #b37d10;
@@ -155,27 +147,25 @@ h2 {
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
-  line-height: 56px;
-  margin-top: -10px;
-  margin-left: -2px;
 }
 .rose {
-  margin-top: -30px;
   color: #424955;
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 0.4vw;
 }
 .oval {
   display: flex;
   gap: 10px;
-  margin-top: -15px;
-  margin-left: -2px;
   width: 36px;
   height: 36px;
   flex-shrink: 0;
+}
+.container__size {
+  display: flex;
+  justify-content: space-between;
 }
 .size {
   color: #424955;
@@ -183,25 +173,20 @@ h2 {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px;
-  margin-top: -5px;
 }
 .what_size {
-  margin-top: -40px;
-  margin-right: 600px;
   color: #424955;
   text-align: right;
   font-family: Manrope;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px;
   text-decoration-line: underline;
 }
 .container_filter {
   display: flex;
   gap: 5px;
-  margin-left: -15px;
+
   padding: 7px 12px;
 }
 .button_one {
@@ -232,7 +217,6 @@ h2 {
   background-color: #fff;
 }
 .subT {
-  margin-top: -2px;
   color: #424955;
   font-family: Manrope;
   font-size: 20px;
@@ -288,9 +272,9 @@ h2 {
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+  border: none;
 }
 .container_select {
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -309,6 +293,7 @@ h2 {
   font-weight: 400;
   line-height: 26px;
 }
+
 .description_exquisite {
   display: flex;
   flex-direction: column;
@@ -359,9 +344,9 @@ h2 {
   flex-shrink: 0;
   border-radius: 8px;
 }
-#section2{
+#section2 {
   width: 100vw;
-  height:90vh;
+  height: 90vh;
 }
 .container-services {
   display: flex;
@@ -388,7 +373,6 @@ h2 {
   position: relative;
   display: flex;
   justify-content: center;
-  
 }
 .container-enunciado {
   position: relative;
@@ -477,7 +461,7 @@ h2 {
 }
 
 #section6 {
-  height: 50;
+  height: 50vh;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 2px;
@@ -486,6 +470,7 @@ h2 {
   justify-content: space-around;
 }
 .fromthe h2 {
+  height: 20vh;
   position: relative;
   bottom: -80px;
   color: #fff;
@@ -514,8 +499,6 @@ h2 {
 
 .imagenfinal {
   width: 100%;
-  /*height: 375px;
-    flex-shrink: 0;*/
 }
 .parrafoImg {
   color: #fff;
