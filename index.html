@@ -15,6 +15,11 @@
   <body>
     <header>
       <h1>Darling.</h1>
+      <img
+        class="container-iconhamburger"
+        src="/assets/icon-hamburger.svg"
+        alt="icon"
+      />
       <nav class="menu">
         <a class="active" href="#">Home</a>
         <a href="#">Shop</a>
@@ -27,22 +32,28 @@
     </header>
     <main>
       <section class="section1">
-        <div class="container-title">
-          <h2>Sparkle & Shine: <br />Exquisite Elegance <br />Unveiled</h2>
-          <button>Shop now</button>
-          <img
-            class="primeraimagen"
-            src="/assets/primeraimagen.png"
-            alt="imagen1"
-          />
-          <img
-            class="segundaimagen"
-            src="/assets/image1_hand.png"
-            alt="imagen2"
-          />
-        </div>
-        <div class="img-vector">
-          <img id="vector-screen-1" src="/assets/vector.svg" />
+          <div class="container-section1">
+             <div class="container-title">
+            <div class="texto-section1">
+              <h2>Sparkle & Shine: <br />Exquisite Elegance <br />Unveiled</h2>
+            <button>Shop now</button>
+          </div>
+            <div class="section1-imagenes">
+              <img
+              class="primeraimagen"
+              src="/assets/primeraimagen.png"
+              alt="imagen1"
+            />
+            <img
+              class="segundaimagen"
+              src="/assets/image1_hand.png"
+              alt="imagen2"
+            />
+          </div> 
+          </div>
+          <div class="img-vector">
+            <img id="vector-screen-1" src="/assets/vector.svg" />
+          </div> 
         </div>
       </section>
       <section id="section2">
@@ -56,14 +67,14 @@
           </div>
           <div class="card-service">
             <img class="icono-services" src="/assets/love-message.png" />
-            <h4>Delivery</h4>
+            <h4>Customer care</h4>
             <p class="p-information">
               Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
             </p>
           </div>
           <div class="card-service">
             <img class="icono-services" src="/assets/lock-landscape.png" />
-            <h4>Delivery</h4>
+            <h4>Payment Security</h4>
             <p class="p-information">
               Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
             </p>
@@ -195,72 +206,74 @@
       <!--Aqui termina la section4-->
       <section id="section5">
         <!--Aqui comienza la section5-->
-        <div class="tittleOur">
+        <div class="container-tittleOur">
           <h2>Our story</h2>
           <img src="/assets/Jewelry our story.png" alt="" />
         </div>
       </section>
-      <!--aqui termina la section5-->
-    </main>
-    <footer>
       <section id="section6">
-        <!--section 6 (ultima -esta contiene el footer)-->
-        <div class="Container-notice">
-          <div class="tittleFinal"><h2>From the people</h2></div>
-          <div class="parrafo1">
-            <p>
-              We love hearing from our <br />
-              customers! <br />
-              You’re the reason we’re here and <br />
-              the reason we do what we do.
-            </p>
-          </div>
-
-          <div>
-            <figure class="imagenFinal">
-              <img src="/assets/footerImg.png" alt="footerImg" />
-            </figure>
-            <p>
-              The ring itself is stunning, with a beautiful <br />
-              design that catches the light and sparkles <br />
-              from every angle. The quality of the <br />
-              materials used is evident, as the ring feels <br />
-              substantial and durable. The gemstone is <br />
-              exquisite, with a vibrant color and <br />exceptional clarity.
-            </p>
-            <h3>Anna Fernandez <br />Usa</h3>
-            <img src="/assets/Icon Button 1 Left.png" alt="Left" />
-            <img src="/assets/Icon Button 1 Right.png" alt="Right" />
+        <!--aqui empieza la section6-->
+      <div class="container-section6"> 
+        <div class="fromthe">
+          <h2>From the people</h2>
+          <p>
+            We love hearing from our <br />
+            customers! <br />
+            You’re the reason we’re here and <br />
+            the reason we do what we do.
+          </p>
+      </div>
+      <div class="carousel">
+        <img src="/assets/footerImg.png" alt="footerImg" />
+        <div>
+          <p class="parrafoImg">
+            The ring itself is stunning, with a beautiful 
+            design that catches the light and sparkles 
+            from every angle. The quality of the <br>
+            materials used is evident, as the ring feels 
+            substantial and durable. <br> The gemstone is 
+            exquisite, with a vibrant color and exceptional clarity.
+          </p>
+          <h3 class="TituloAna">Anna Fernandez <br />Usa</h3>
+          <div class="iconosA">
+            <img src="/assets/Icon Button 1 Left.png" alt="">
+            <img src="/assets/Icon Button 1 Right.png" alt="">
           </div>
         </div>
-        <div class="container-footer">
-          <h2 class="tituloD">Darling</h2>
-          <ul>
-            <li>Shop</li>
-            <li>Collections</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Privacy</li>
-            <li>Terms</li>
-          </ul>
+      </div></div>
+      </section>
+    </main>
+    <footer class="section-footer">
+      <div class="information-containerF">
+      <div>
+        <h2 class="tituloD">Darling</h2>
+        <ul class="items-pages">
+          <li>Shop</li>
+          <li>Collections</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Privacy</li>
+          <li>Terms</li>
+        </ul>
+      </div>
+        <div class="container-barrab">
           <h4>Subscribe to our newsletter</h4>
           <span>For product announcements and exclusive insights</span>
-          <div class="container-barrab">
-            <form class="search"></form>
+          <form class="search">
             <input type="text" placeholder="input your email" />
             <button>Subscribe</button>
-          </div>
-          <div class="icons">
-            <span>© 2022 Brand, Inc.</span>
-            <figure>
-              <img src="/assets/Logo twitter 1.png" alt="twitter" />
-              <img src="/assets/Logo facebook 1.png" alt="facebook" />
-              <img src="/assets/Logo linkedin 1.png" alt="linkedin" />
-              <img src="/assets/Logo youtube 1.png" alt="youtube" />
-            </figure>
-          </div>
+          </form>
         </div>
-      </section>
+      </div>
+      <div class="icons-container">
+        <span>© 2022 Brand, Inc.</span>
+        <figure>
+          <img src="/assets/Logo twitter 1.png" alt="twitter" />
+          <img src="/assets/Logo facebook 1.png" alt="facebook" />
+          <img src="/assets/Logo linkedin 1.png" alt="linkedin" />
+          <img src="/assets/Logo youtube 1.png" alt="youtube" />
+        </figure>
+      </div>
     </footer>
   </body>
 </html>
