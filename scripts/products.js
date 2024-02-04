@@ -197,7 +197,7 @@ const productosFiltrados = filtrarPorTipo(productos, tipoAccesorioExistente);
 
 //---3) funcion  ---//
 
-console.log("holamundo");
+
 
 function buscarPorNombre(listaProductos, nombre) {
   const nombreMinus = nombre.toLowerCase();
@@ -210,19 +210,58 @@ function buscarPorNombre(listaProductos, nombre) {
 //console.log(buscarPorNombre( productos, "Serene"));
 
 //---4) Función cuatro ---//
-const ordenar = productos.toSorted(
-  (precio1, precio2) => precio1.precioUnitario - precio2.precioUnitario
-);
-const ordenarA = productos.toSorted(
-  (precio1, precio2) => precio2.precioUnitario - precio1.precioUnitario
-);
+// const ordenar = productos.toSorted(
+//   (precio1, precio2) => precio1.precioUnitario - precio2.precioUnitario
+// );
+// const ordenarA = productos.toSorted(
+//   (precio1, precio2) => precio2.precioUnitario - precio1.precioUnitario
+// );
 
-//return ordenar
 
 //console.log(ordenar);
-console.log(ordenarA);
+//console.log(ordenarA);
+
 
 //---5) Función cinco---//
 
-const totalCompra = productos.reduce(productos);
+
 //reduce
+const listaDeprueba=[
+  {
+    id: 13,
+    nombre: "Glimmering Ring",
+    codigo: "22777",
+    precioUnitario: 620.73,
+    tipoAccesorio: "anillo",
+    imagen: ["../assets/img-vista-13products.png"],
+    descripcion: "anillo liana-incrustaciones oro rosa",
+    stockColor: {
+      paloRosa: 1,
+    },
+    cantidad: 1,
+  },
+
+  {
+    id: 14,
+    nombre: "Serene Estefa",
+    codigo: "22987",
+    precioUnitario: 125.28,
+    tipoAccesorio: "aretes",
+    imagen: ["../assets/img-vista-6products.png"],
+    descripcion: "aretes corazol azul",
+    stockColor: {
+      dorado: 1,
+    },
+    cantidad: 1,
+  },
+];
+
+const calcularPrecioTotal = (productos) => {
+  const total = productos.reduce((acumulador, producto) => {
+    return acumulador + producto.precioUnitario * producto.cantidad;
+  }, 0);
+  return total;
+};
+
+const precioTotal = calcularPrecioTotal(listaDeprueba);
+console.log(`El precio total de los productos es: ${precioTotal}`);
