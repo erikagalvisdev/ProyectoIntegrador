@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #093931;
+}
+.section1 {
+  height: 100vh;
+  background-color: #093931;
+  background-image: url(/assets/olas_\ blancas.png);
+}
+h1 {
+  color: #f5d38e;
+  margin: 18px;
+  font-family: "Comic Neue", cursive;
+  font-family: "Fondamento", cursive;
+  font-family: "Lora", serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*width: 1440px;
+      height: 62px;*/
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1.5rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 100;
+}
+
+nav a:hover {
+  color: #f2c66d;
+  justify-content: flex-end;
+}
+h2 {
+  width: 537px;
+  font-weight: 400;
+  font-size: 50px;
+  font-style: normal;
+  line-height: 94px;
+  color: #f5d38e;
+  font-family: "Comic Neue", cursive; /*preg si puedo usar la fuente de letra una vez*/
+  font-family: "Fondamento", cursive;
+  font-family: "Lora", serif;
+}
+.container-title {
+  padding-left: 17%;
+  padding-top: 12%;
+}
+
+.container__succes {
+  width: 100%;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.imagen__circol {
+  display: inline-block;
+}
+
+.circol {
+  display: block;
+  margin: 0 auto;
+  width: 18.4375rem;
+  height: 18.4375rem;
+}
+.tittle__you {
+  color: #171a1f;
+  text-align: center;
+  font-family: "Cormorant Garamond";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3rem;
+}
+.imagen__circol > span {
+  color: #9095a0;
+  font-family: Manrope;
+  font-size: 0.985rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.375rem;
+}
+
+.container {
+  padding: 3vw;
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+  border: 1px solid #000;
+}
+
+.container1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw;
+}
+
+.container2 {
+  display: flex;
+  gap: 1.4vw;
+  padding: 1vw;
+}
+
+.icon {
+  width: 2vw;
+}
+
+.container4 {
+  display: flex;
+  gap: 1.5vw;
+  padding: 1vw;
+  justify-content: space-between;
+}
+
+.container__column {
+  margin-right: 20vw;
+}
+
+.image {
+  width: 6vw;
+  object-fit: cover;
+}
+
+/* Footer styles */
+.information-containerF {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #093931;
+  color: white;
+}
+.items-pages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  list-style: none;
+}
+
+.icons-container {
+  background-color: #093931;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12%;
+  padding-right: 12%;
+  color: white;
+}
+.search {
+  margin-top: 10px;
+}
+.search input {
+  border: 1px white solid;
+  background-color: #093931;
+  padding: 7px 132px 6px 12px;
+  border-radius: 18px 0px 0px 18px;
+  margin-right: -10px;
+}
+.search input::placeholder {
+  color: white;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Manrope", sans-serif;
+}
+.search button {
+  border: none;
+  color: #6b4a09;
+  font-size: 14px;
+  background-color: #f2c66d;
+  text-align: center;
+  padding: 7px 24px 7px 24px;
+  border-radius: 0px 18px 18px 0px;
+}
