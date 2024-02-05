@@ -1,4 +1,4 @@
-//---1) Lista de productos ---//
+//1) Lista de productos ---//
 const productos = [
   {
     id: 1,
@@ -208,12 +208,12 @@ function buscarPorNombre(listaProductos, nombre) {
 //console.log(buscarPorNombre( productos, "Serene"));
 
 //---4) Función cuatro ---//
-// const ordenar = productos.toSorted(
-//   (precio1, precio2) => precio1.precioUnitario - precio2.precioUnitario
-// );
-// const ordenarA = productos.toSorted(
-//   (precio1, precio2) => precio2.precioUnitario - precio1.precioUnitario
-// );
+ const ordenar = productos.toSorted(
+   (precio1, precio2) => precio1.precioUnitario - precio2.precioUnitario
+);
+ const ordenarA = productos.toSorted(
+  (precio1, precio2) => precio2.precioUnitario - precio1.precioUnitario
+);
 
 //console.log(ordenar);
 //console.log(ordenarA);
@@ -260,3 +260,4 @@ const calcularPrecioTotal = (productos) => {
 
 const precioTotal = calcularPrecioTotal(listaDeprueba);
 console.log(`El precio total de los productos es: ${precioTotal}`);
+
