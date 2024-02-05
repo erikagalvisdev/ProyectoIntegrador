@@ -197,8 +197,6 @@ const productosFiltrados = filtrarPorTipo(productos, tipoAccesorioExistente);
 
 //---3) funcion  ---//
 
-
-
 function buscarPorNombre(listaProductos, nombre) {
   const nombreMinus = nombre.toLowerCase();
   const productosFiltrados = listaProductos.filter((elemento) =>
@@ -217,16 +215,13 @@ function buscarPorNombre(listaProductos, nombre) {
 //   (precio1, precio2) => precio2.precioUnitario - precio1.precioUnitario
 // );
 
-
 //console.log(ordenar);
 //console.log(ordenarA);
 
-
 //---5) Función cinco---//
 
-
 //reduce
-const listaDeprueba=[
+const listaDeprueba = [
   {
     id: 13,
     nombre: "Glimmering Ring",
