@@ -323,14 +323,12 @@ main button {
   bottom: -48px;
   text-align: center;
 }
+
 .img-sliderp2 {
   max-width: 100%;
   height: auto;
   border-radius: 4px; /* Bordes redondeados para la imagen */
 }
-<<<<<<< HEAD
-=======
-
 
 .container-tittleOur h2 {
   text-align: center;
@@ -368,7 +366,6 @@ main button {
   font-style: normal;
   font-weight: 500px;
   line-height: 68px;
- 
 }
 .fromthe p {
   position: relative;
@@ -671,7 +668,3 @@ main button {
  }
 }
 
-
-
-
->>>>>>> main
