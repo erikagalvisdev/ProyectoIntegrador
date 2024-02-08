@@ -320,3 +320,4 @@ buscador.addEventListener("input", (e) => {
   });
 });
 // función  
+
