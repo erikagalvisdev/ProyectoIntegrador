@@ -48,16 +48,18 @@ nav a:hover {
   color: #f2c66d;
   justify-content: flex-end;
 }
+
 h2 {
   font-weight: 400;
   font-size: 50px;
   font-style: normal;
   line-height: 94px;
   color: #f5d38e;
-  font-family: "Comic Neue", cursive; /*preg si puedo usar la fuente de letra una vez*/
+  font-family: "Comic Neue", cursive; 
   font-family: "Fondamento", cursive;
   font-family: "Lora", serif;
 }
+
 .iconoseccion {
   margin-left: 10px;
 }
@@ -68,7 +70,6 @@ h2 {
   color: #f2c66d;
   justify-content: flex-end;
 }
-
 
 .modaltCart {
   display: flex;
