@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    background-color: rgba(198, 147, 178, 0.942);
+  }
+
+  .title_form {
+    display: flex;
+    justify-content: center;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+  }
+
+#form_pago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 1rem;
+}
+
+#e_mail, #nombre_tarjeta, #numero_tarjeta, #fecha-caducidad{
+  width: 30rem;
+  padding: 11px;
+  background-color: rgb(158, 170, 181);
+}
+
+#cvv {
+  width: 20rem;
+  padding: 11px;
+  margin-left: 15rem;
+  top: 0.5rem;
+  background-color: rgb(158, 170, 181);
+}
+
+#submit-button {
+  margin-bottom: 15px;
+}
+
+
+
+
+
