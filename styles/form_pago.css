@@ -4,7 +4,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(15, 96, 96);
+  background-color: #0d554a;
 }
 
   .title_form {
@@ -22,15 +22,14 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
-    width: 340px;
-    background-color: rgb(217, 255, 0);
+    width: 400px;
+    background-color: #EDFFF0; 
 }
 
 .input-group {
   display: flex;
   flex-direction: column;
   text-align: left;
-  border: solid red;
 }
 
 label {
@@ -48,21 +47,22 @@ input, textarea {
   border: 2px solid #F0faf1;
   color: #283629;
   outline: none;
-  border: solid blue;
+  border: solid #f2c66d;
 }
 
 #submitButton {
-  font-size: 16px;
-color: #FFFFFF;
+font-size: 16px;
+color: #050404;
 border: 0;
 border-radius: 25px;
-background-color: #76b874;
+background-color: #389b34;
 box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+border: solid  #f2c66d;
 cursor: pointer;
 }
 
-.btn:hover {
-  background-color: #50E04B;
+#submitButton:hover {
+  background-color: #1fda18;
   }
   
   @media (max-width: 991px) {
