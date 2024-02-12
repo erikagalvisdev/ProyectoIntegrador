@@ -195,28 +195,28 @@ const productos = [
 
 //console.log(productosFiltrados);
 
-//---3) funcion  ---//
+// //---3) funcion  ---//
 
-function buscarPorNombre(listaProductos, nombre) {
-  const nombreMinus = nombre.toLowerCase();
-  const productosFiltrados = listaProductos.filter((elemento) =>
-    elemento.nombre.toLowerCase().includes(nombreMinus)
-  );
+// function buscarPorNombre(listaProductos, nombre) {
+//   const nombreMinus = nombre.toLowerCase();
+//   const productosFiltrados = listaProductos.filter((elemento) =>
+//     elemento.nombre.toLowerCase().includes(nombreMinus)
+//   );
 
-  return productosFiltrados;
-}
-//console.log(buscarPorNombre( productos, "Serene"));
+//   return productosFiltrados;
+// }
+// //console.log(buscarPorNombre( productos, "Serene"));
 
 //---4) Función cuatro ---//
-const ordenar = productos.toSorted(
-  (precio1, precio2) => precio1.precioUnitario - precio2.precioUnitario
-);
-const ordenarA = productos.toSorted(
-  (precio1, precio2) => precio2.precioUnitario - precio1.precioUnitario
-);
+// const ordenar = productos.toSorted(
+//   (precio1, precio2) => precio1.precioUnitario - precio2.precioUnitario
+// );
+// const ordenarA = productos.toSorted(
+//   (precio1, precio2) => precio2.precioUnitario - precio1.precioUnitario
+// );
 
-//console.log(ordenar);
-//console.log(ordenarA);
+// //console.log(ordenar);
+// //console.log(ordenarA);
 
 //---5) Función cinco---//
 
@@ -282,7 +282,7 @@ insertarProductos(document.querySelector(".galeria1"), productos);
 //Filtro por tipo de productos
 let botonesFiltro = document.querySelectorAll(".boton-all");
 botonesFiltro = [...botonesFiltro];
-console.log(botonesFiltro);
+//console.log(botonesFiltro);
 
 botonesFiltro.forEach((boton) => {
   boton.addEventListener("click", () => {
@@ -319,5 +319,28 @@ buscador.addEventListener("input", (e) => {
     }
   });
 });
-// función  
 
+const ordenarAscendente = (productos) =>
+  productos.sort((a, b) => a.precioUnitario - b.precioUnitario);
+const ordenarDescendente = (productos) =>
+  productos.sort((a, b) => b.precioUnitario - a.precioUnitario);
+document.getElementById("ordenarSelector").addEventListener("change", (e) => {
+  console.log(e.target.value);
+
+  let ordenamiento = [];
+  switch (e.target.value) {
+    case "1":
+      ordenamiento = ordenarAscendente(productos.slice());
+      break;
+
+    case "2":
+      ordenamiento = ordenarDescendente(productos.slice());
+      break;
+
+    default:
+      ordenamiento=productos
+      break;
+  }
+  console.log(ordenamiento); //llamar la funcion con la que pintamos los productos en la pagina y le pasamos el ordenamientro 
+
+});
