@@ -7,25 +7,30 @@
     <title>Formulario de pago</title>
   </head>
   <body>
-    <div>
-      <h1 class="title_form">Información personal</h1>
-      <span>Completa los datos del formulario para realizar el pago</span>
       <form id="form_pago">
-        <label for="Correo_electronico">Correo electrónico</label>
-        <input id="e_mail" />
-        <label for="nombre_tarjeta">Nombre en la tarjeta</label>
-        <input id="nombre_tarjeta" />
-        <label for="numero_tarjeta">Número de la tarjeta</label>
-        <div><input type="number" id="numero_tarjeta"/>
-            <img src="../assets/circles.png" alt="circles"/>
+        <h1> class="title_form">Información personal</h1>
+        <span>Completa los datos del formulario para realizar el pago</span>
+        <div class="input-group">
+          <label for="Correo_electronico">Correo electrónico</label>
+          <input id="e_mail" placeholder="Escriba su correo electronico"/>
+
+          <label for="nombre_tarjeta">Nombre en la tarjeta</label>
+          <input id="nombre_tarjeta" placeholder="Escriba su nombre"/>
+
+          <label for="numero_tarjeta">Número de la tarjeta</label>
+          <div><input type="number" id="numero_tarjeta" placeholder="Escriba el número de la tarjeta"/>
+              <img src="../assets/circles.png" alt="circles"/>
+          </div>
+          
+          <label for="fecha_caducidad">Fecha de caducidad</label>
+          <input type="date" id="fecha_caducidad"/>
+
+          <label for="password">CVV</label>
+          <input type="currentpassword" id="cvv" placeholder="Escriba el CVV"/>
+
+          <button type="submit" disabled id="submitButton">Realizar pago</button>
         </div>
-        <label for="fecha_caducidad">Fecha de caducidad</label>
-        <input type="date" id="fecha_caducidad" />
-        <label for="password">CVV</label>
-        <input type="currentpassword" id="cvv" />
-        <button type="submit" disabled id="submitButton">Realizar pago</button>
       </form>
-    </div>
     <script src="../script/form_pago.js"></script>
   </body>
 </html>
