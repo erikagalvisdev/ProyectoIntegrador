@@ -47,6 +47,7 @@ input, textarea {
     color: #283629;
     outline: none;
     border: solid #f2c66d;
+    border: solid red;
 }
 
 input::placeholder, textarea::placeholder {

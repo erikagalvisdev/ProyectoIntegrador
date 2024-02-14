@@ -1,10 +1,34 @@
 const submitButton = document.querySelector("#submitButton");
 const ocultar = document.querySelector("#error-message");
+const nombre = document.querySelector("#full-name");
+const phone = document.querySelector("#phone");
+const address = document.querySelector("#address");//Aquí se agregó
 const correo_electronico = document.querySelector("#e_mail");
 const nombre_tarjeta = document.querySelector("#nombre_tarjeta");
 const numero_tarjeta = document.querySelector("#numero_tarjeta");
 const fecha_caducidad = document.querySelector("#fecha_caducidad");
 const cvv = document.querySelector("#cvv");
+
+//Se agregó del otro form.
+// Función 1) para validar el nombre
+const validarNombre = (nombre) => {
+  console.log("nombre", nombre);
+  return nombre.length > 5;
+};
+
+// Función 2) para validar el teléfono
+const validarPhone = (phone) => {
+  console.log("phone", phone);
+  return !isNaN(phone) && phone.length === 10;
+};
+
+// Función 3) para validar la dirección
+const validarAddress = (address) => {
+  console.log("address", address);
+  return address.length > 5;
+};
+
+
 
 // Función 1) para validar el email
 const validarEmail = (email) => {
@@ -41,7 +65,7 @@ const validarCvv = (cvv) => {
 };
 
 document.addEventListener("keyup", (e) => {
-  if (
+  if (validarNombre(nombre.value) && validarPhone(phone.value) && validarAddress(address.value) &&
     validarEmail(correo_electronico.value) &&
     validarNombrePersona(nombre_tarjeta.value) &&
     validarNumeroTarjeta(numero_tarjeta.value) &&
