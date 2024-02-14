@@ -272,12 +272,21 @@ const insertarProductos = (contenedor, listaProductos) => {
         <img src="${producto.imagen[0]}" alt="${producto.nombre}">
         <h2>${producto.nombre}</h2>
         <p>$${producto.precioUnitario}</p>
+        <button class="boton" id=${producto.id}>Ver producto</button>
       </div>
     </div>`;
   });
 };
 
 insertarProductos(document.querySelector(".galeria1"), productos);
+
+const botones = document.querySelectorAll(".boton")
+
+botones.forEach((boton)=>{
+    boton.addEventListener('click', (e)=>{
+      console.log(e.target.id, "ID DEL BOTON")
+    })
+})
 
 //Filtro por tipo de productos
 let botonesFiltro = document.querySelectorAll(".boton-all");
