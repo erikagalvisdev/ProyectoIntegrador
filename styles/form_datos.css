@@ -7,6 +7,10 @@ body {
     background-color: #0d554a;
 }
 
+.fondo-body{
+    background-image: url("../assets/vector.png");
+  }
+  
 form {
     padding: 50px 55px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
