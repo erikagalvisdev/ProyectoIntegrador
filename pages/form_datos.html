@@ -14,17 +14,20 @@
         </feature>
         <h2>Información del cliente</h2>
         <div class="input-group">
-            <label for="Full-name">Nombre completo</label>
-            <input type="text" name="Nombre completo" id="Nombre-completo" placeholder="Escriba su nombre completo">
+            <label for="full-name">Nombre completo</label>
+            <input type="text" name="nombre completo" id="full-name" placeholder="Escriba su nombre completo">
 
             <label for="phone">Teléfono</label>
             <input type="tel" name="phone" id="phone" placeholder="Escriba su número de teléfono">
 
-            <label for="Address">Dirección</label>
-            <input type="text" name="Address" id="Address" placeholder="Escriba su Dirección">
+            <label for="address">Dirección</label>
+            <input type="text" name="address" id="address" placeholder="Escriba su Dirección">
+
+            <p class="ocultar" id="error-message"> Por favor revisa, quizás te hace falta algún campo por llenar.</p>
 
             <input class="btn" type="submit" value="Enviar">
         </div>
     </form>
+    <script src="../script/form_datos.js"></script>
 </body>
 </html>

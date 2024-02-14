@@ -64,6 +64,16 @@ cursor: pointer;
 background-color: #50E04B;
 }
 
+.ocultar {
+    display: none;
+}
+
+.ocultar, p {
+color: red;
+}
+  
+
+     /*Responsive design*/
 @media (max-width: 991px) {
     body {
         padding: 30px;

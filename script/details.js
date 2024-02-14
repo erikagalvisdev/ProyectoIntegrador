@@ -9,6 +9,7 @@ const productoParaElCarrito={
 
 
 
+
 ///click sobre el btn agregar al carrito
 //1. Capturar el btn
 //2. Agregar el escuchador de envento click
