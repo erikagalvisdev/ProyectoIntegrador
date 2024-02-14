@@ -5,7 +5,7 @@ const productos = [
     nombre: "Luxury Gems Necklace",
     codigo: "22331",
     precioUnitario: 168.76,
-    tipoAccesorio: "collar",
+    tipoAccesorio: "bracelets",
     imagen: ["../assets/img-vista-1products.png"],
     descripcion: "collar plata perlado",
     stockColor: {
@@ -17,7 +17,7 @@ const productos = [
     nombre: "Aurora Ring",
     codigo: "22351",
     precioUnitario: 125.28,
-    tipoAccesorio: "anillo",
+    tipoAccesorio: "necklaces",
     imagen: ["../assets/img-vista-2products.png"],
     descripcion: "anillo curvo dorado",
     stockColor: {
@@ -29,7 +29,7 @@ const productos = [
     nombre: "Reflections Necklace",
     codigo: "22123",
     precioUnitario: 620.73,
-    tipoAccesorio: "collar",
+    tipoAccesorio: "earrings",
     imagen: ["../assets/img-vista-3products.png"],
     descripcion: "collar ancho dorado y plata",
     stockColor: {
@@ -41,7 +41,7 @@ const productos = [
     nombre: "Dreamy Infinity Ring",
     codigo: "22543",
     precioUnitario: 327.71,
-    tipoAccesorio: "anillo",
+    tipoAccesorio: "rings",
     imagen: ["../assets/img-vista-4products.png"],
     descripcion: "anillo piedra rosa champan",
     stockColor: {
@@ -53,7 +53,7 @@ const productos = [
     nombre: "Opulent Jewels Ring",
     codigo: "22923",
     precioUnitario: 168.76,
-    tipoAccesorio: "anillo",
+    tipoAccesorio: "rings",
     imagen: ["../assets/img-vista-5products.png"],
     descripcion: "anillo plata doble",
     stockColor: {
@@ -101,7 +101,7 @@ const productos = [
     nombre: "Timeless Elegance Ring",
     codigo: "22555",
     precioUnitario: 168.76,
-    tipoAccesorio: "anillo",
+    tipoAccesorio: "rings",
     imagen: ["../assets/img-vista-9products.png"],
     descripcion: "anillo 3 formas color Dorado-azul oscuro",
     stockColor: {
@@ -113,7 +113,7 @@ const productos = [
     nombre: "Luxury Charms Ring",
     codigo: "78205",
     precioUnitario: 620.73,
-    tipoAccesorio: "anillo",
+    tipoAccesorio: "rings",
     imagen: ["../assets/img-vista-10products.png"],
     descripcion: "anillo dorado piedra naranja",
     stockColor: {
@@ -125,7 +125,7 @@ const productos = [
     nombre: "Blissful Bloom Rings",
     codigo: "22111",
     precioUnitario: 620.73,
-    tipoAccesorio: "anillo",
+    tipoAccesorio: "rings",
     imagen: ["../assets/img-vista-11products.png"],
     descripcion: "anillo hojas doradas",
     stockColor: {
@@ -184,39 +184,39 @@ const productos = [
 ];
 
 //---2) funcion  ---//
-function filtrarPorTipo(productos, tipo) {
-  return productos.filter((producto) => producto.tipoAccesorio === tipo);
-}
+//function filtrarPorTipo(productos, tipo) {
+//return productos.filter((producto) => producto.tipoAccesorio === tipo);
+//}
 
 // Llamamos función con la lista de productos y un tipo de accesorio existente//
 
-const tipoAccesorioExistente = "anillo";
-const productosFiltrados = filtrarPorTipo(productos, tipoAccesorioExistente);
+//const tipoAccesorioExistente = "anillo";
+//const productosFiltrados = filtrarPorTipo(productos, tipoAccesorioExistente);
 
 //console.log(productosFiltrados);
 
-//---3) funcion  ---//
+// //---3) funcion  ---//
 
-function buscarPorNombre(listaProductos, nombre) {
-  const nombreMinus = nombre.toLowerCase();
-  const productosFiltrados = listaProductos.filter((elemento) =>
-    elemento.nombre.toLowerCase().includes(nombreMinus)
-  );
+// function buscarPorNombre(listaProductos, nombre) {
+//   const nombreMinus = nombre.toLowerCase();
+//   const productosFiltrados = listaProductos.filter((elemento) =>
+//     elemento.nombre.toLowerCase().includes(nombreMinus)
+//   );
 
-  return productosFiltrados;
-}
-//console.log(buscarPorNombre( productos, "Serene"));
+//   return productosFiltrados;
+// }
+// //console.log(buscarPorNombre( productos, "Serene"));
 
 //---4) Función cuatro ---//
- const ordenar = productos.toSorted(
-   (precio1, precio2) => precio1.precioUnitario - precio2.precioUnitario
-);
- const ordenarA = productos.toSorted(
-  (precio1, precio2) => precio2.precioUnitario - precio1.precioUnitario
-);
+// const ordenar = productos.toSorted(
+//   (precio1, precio2) => precio1.precioUnitario - precio2.precioUnitario
+// );
+// const ordenarA = productos.toSorted(
+//   (precio1, precio2) => precio2.precioUnitario - precio1.precioUnitario
+// );
 
-//console.log(ordenar);
-//console.log(ordenarA);
+// //console.log(ordenar);
+// //console.log(ordenarA);
 
 //---5) Función cinco---//
 
@@ -259,5 +259,88 @@ const calcularPrecioTotal = (productos) => {
 };
 
 const precioTotal = calcularPrecioTotal(listaDeprueba);
-console.log(`El precio total de los productos es: ${precioTotal}`);
+//console.log(`El precio total de los productos es: ${precioTotal}`);
 
+// Se agrega HTML dinamico
+
+const insertarProductos = (contenedor, listaProductos) => {
+  contenedor.innerHTML = "";
+  listaProductos.forEach((producto) => {
+    contenedor.innerHTML += `
+    <div class="fila1" data-tipo="${producto.tipoAccesorio}">
+      <div>
+        <img src="${producto.imagen[0]}" alt="${producto.nombre}">
+        <h2>${producto.nombre}</h2>
+        <p>$${producto.precioUnitario}</p>
+      </div>
+    </div>`;
+  });
+};
+
+insertarProductos(document.querySelector(".galeria1"), productos);
+
+//Filtro por tipo de productos
+let botonesFiltro = document.querySelectorAll(".boton-all");
+botonesFiltro = [...botonesFiltro];
+//console.log(botonesFiltro);
+
+botonesFiltro.forEach((boton) => {
+  boton.addEventListener("click", () => {
+    const tipoAccesorioExistente = boton.textContent.toLowerCase();
+    const tarjetas = document.querySelectorAll(".fila1");
+
+    tarjetas.forEach((tarjeta) => {
+      if (tarjeta.dataset.tipo === tipoAccesorioExistente) {
+        tarjeta.style.display = "block";
+      } else {
+        tarjeta.style.display = "none";
+      }
+    });
+  });
+});
+
+// funcion buscardor
+
+const buscador = document.getElementById("buscador");
+const listaTar = document.querySelectorAll(".fila1");
+
+buscador.addEventListener("input", (e) => {
+  const textoBuscar = e.target.value.trim().toLowerCase();
+
+  listaTar.forEach((tarjeta) => {
+    const nombreProducto = tarjeta
+      .querySelector("h2")
+      .textContent.toLowerCase();
+
+    if (nombreProducto.includes(textoBuscar)) {
+      tarjeta.style.display = "block";
+    } else {
+      tarjeta.style.display = "none";
+    }
+  });
+});
+
+const ordenarAscendente = (productos) =>
+  productos.sort((a, b) => a.precioUnitario - b.precioUnitario);
+const ordenarDescendente = (productos) =>
+  productos.sort((a, b) => b.precioUnitario - a.precioUnitario);
+document.getElementById("ordenarSelector").addEventListener("change", (e) => {
+  console.log(e.target.value);
+
+  let ordenamiento = [];
+  switch (e.target.value) {
+    case "1":
+      ordenamiento = ordenarAscendente(productos.slice());
+      break;
+
+    case "2":
+      ordenamiento = ordenarDescendente(productos.slice());
+      break;
+
+    default:
+      ordenamiento=productos
+      break;
+  }
+  console.log(ordenamiento); //llamar la funcion con la que pintamos los productos en la pagina y le pasamos el ordenamientro 
+
+});

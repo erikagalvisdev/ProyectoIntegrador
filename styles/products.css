@@ -49,8 +49,8 @@ visibility: hidden;
 }
 
 .Barra-busqueda input {
-  width: 700px; 
-  height: 6vh; 
+  width: 700px;
+  height: 6vh;
   border-radius: 50px;
 }
 
@@ -123,12 +123,15 @@ visibility: hidden;
   margin-left: 6rem;
   display: flex;
   justify-content: space-between;
-  gap:3rem;
+  gap: 3rem;
 }
 
 .galeria1 {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
   padding-top: 1rem;
   padding-left: 10rem;
   padding-right: 11rem;
@@ -199,22 +202,20 @@ visibility: hidden;
 }
 
 .lista-numeros {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .lista-numeros button {
-  color: #9095A0;
+  color: #9095a0;
   font-size: 16px;
   margin: 5px;
-  padding: 8px 12px; 
+  padding: 8px 12px;
 }
 
 .lista-numeros button:hover {
-  color: #0D554A; 
+  color: #0d554a;
   border-radius: 26px;
   cursor: pointer;
   border: 1px solid #5d5a5a;
 }
-
-
