@@ -344,30 +344,36 @@ const buscadora = (listaTar) => {
 };
 
 //función ordenar ascendente y descendete
-const ordenadora = (listaTar) => {
-  const ordenarAscendente = (listaTar) =>
-    listaTar.sort((a, b) => a.precioUnitario - b.precioUnitario);
-  const ordenarDescendente = (listaTar) =>
-    listaTar.sort((a, b) => b.precioUnitario - a.precioUnitario);
-  document.getElementById("ordenarSelector").addEventListener("change", (e) => {
-    console.log(e.target.value);
+const ordenarAscendente = (listaDeProductos) =>
+  listaDeProductos.sort((a, b) => a.precioUnitario - b.precioUnitario);
+  
+const ordenarDescendente = (listaDeProductos) =>
+  listaDeProductos.sort((a, b) => b.precioUnitario - a.precioUnitario);
 
-    let ordenamiento = [];
-    switch (e.target.value) {
-      case "1":
-        ordenamiento = ordenarAscendente(listaTar.slice());
-        break;
 
-      case "2":
-        ordenamiento = ordenarDescendente(listaTar.slice());
-        break;
+const ordenadora = (listaDeProductos) => {
+  const orderSelect = document.getElementById("ordenarSelector");
+orderSelect.addEventListener("change", (e) => {
+  console.log(e.target.value);
 
-      default:
-        ordenamiento = listaTar;
-        break;
-    }
-    console.log(ordenamiento); //llamar la funcion con la que pintamos los productos en la pagina y le pasamos el ordenamientro
-  });
+  let ordenamiento = [];
+  switch (e.target.value) {
+    case "1":
+      ordenamiento = ordenarAscendente(listaDeProductos);
+      break;
+
+    case "2":
+      ordenamiento = ordenarDescendente(listaDeProductos);
+      break;
+
+    default:
+      ordenamiento = listaDeProductos;
+      break;
+  }
+  console.log(ordenamiento);
+  
+  insertarProductos(padreCards, ordenamiento);
+});
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -377,6 +383,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   insertarProductos(padreCards, productos);
   let listaTar = document.querySelectorAll(".fila1");
   buscadora(listaTar);
-  ordenadora(listaTar);
+  ordenadora(productos);
   recorrerCard();
 });
