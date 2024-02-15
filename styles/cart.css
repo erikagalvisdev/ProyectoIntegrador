@@ -1,0 +1,45 @@
+.img1,
+.img2,
+.img3 {
+  display: flex;
+  align-items: center;
+  /*flex-direction: column;*/
+  width: 100%;
+  padding-bottom: 1rem;
+  /*border: solid #cbcccf*/
+}
+
+.summary,
+p {
+  color: #171a1f;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.total_end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.total_price {
+    width: 100px;
+    text-align: center;
+    margin-left: 100px;
+    top: 10px;
+}
+
+.buttonCart_payment {
+  /*display: flex;*/
+  font-size: 25px;
+  align-items: center;
+  border-radius: 10px;
+  background: #0D554A;
+  border: 1px white solid;
+  padding: 10px 10px; /* Reducir el padding */
+}
+

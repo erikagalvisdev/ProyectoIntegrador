@@ -1,3 +1,4 @@
+
 const idCard = JSON.parse(localStorage.getItem("idCar"));
 const URL_BASE = "https://minibackend-dev-fgzg.2.us-1.fl0.io/";
 
@@ -29,3 +30,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   const selectedProduct = await getProduct(url, idCard);
   printDetailsProduct(selectedProduct);
 });
+
+

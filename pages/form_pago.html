@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/form_pago.css">
+    <title>Formulario de pago</title>
+  </head>
+  <body class="fondo-body">
+      <form id="form_pago">
+        <h1 class="title_form">Información personal</h1>
+        <span>Completa los datos del formulario para realizar el pago</span>
+        <br><br>
+        <div class="input-group">
+          <label for="full-name">Nombre completo</label>
+          <input type="text" name="nombre completo" id="full-name" placeholder="Escriba su nombre completo">
+
+          <label for="phone">Teléfono</label>
+            <input type="tel" name="phone" id="phone" placeholder="Escriba su número de teléfono">
+
+            <label for="address">Dirección</label>
+            <input type="text" name="address" id="address" placeholder="Escriba su Dirección">
+            
+          <label for="Correo_electronico">Correo electrónico</label>
+          <input class="estilo_input" id="e_mail" placeholder="Escriba su correo electrónico"/>
+
+          <label for="nombre_tarjeta">Nombre en la tarjeta</label>
+          <input class="estilo_input" id="nombre_tarjeta" placeholder="Escriba su nombre"/>
+
+          <label for="numero_tarjeta">Número de la tarjeta</label>
+          <div class="estilo_input contenedor-input-icons">
+            <input type="number" id="numero_tarjeta" placeholder="Escriba el número de la tarjeta"/>
+            <div class="contenedor-iconos">
+              <img class="imagen_tarjeta" src="../assets/visa1" alt="visa"/>
+              <img class="imagen_tarjeta" src="../assets/circles.png" alt="circles"/>
+              <img class="imagen_tarjeta" src="../assets/amex.png" alt="amex"/>
+            </div>
+          </div>
+          
+          <label for="fecha_caducidad">Fecha de caducidad</label>
+          <input class="estilo_input estilo_input_fecha" type="date" id="fecha_caducidad"/>
+
+          <label for="password">CVV</label>
+          <input class="estilo_input" type="currentpassword" id="cvv" placeholder="Escriba el CVV"/>
+
+          <p class="ocultar mensaje_error" id="error-message">Te hace falta llenar algún campo.</p>
+
+          <button type="submit" disabled id="submitButton">Realizar pago</button>
+        </div>
+      </form>
+    <script src="../script/form_pago.js"></script>
+  </body>
+</html>

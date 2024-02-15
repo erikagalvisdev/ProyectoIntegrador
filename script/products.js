@@ -287,6 +287,7 @@ const insertarProductos = (contenedor, listaProductos) => {
         <img src="${producto.imagen[0]}" alt="${producto.nombre}">
         <h2>${producto.nombre}</h2>
         <p>$${producto.precioUnitario}</p>
+        <button class="boton" id=${producto.id}>Ver producto</button>
       </div>
     </div>`;
   });
