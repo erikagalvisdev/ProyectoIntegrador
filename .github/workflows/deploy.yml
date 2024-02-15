@@ -15,8 +15,8 @@ jobs:
 
       - name: Deploy
         run: |
-          git config --global user.email "estefania.martinez@est.iudigital.edu.co"
-          git config --global user.name "estefania.martinez@est.iudigital.edu.co"
+          git config --global user.email "erika.galvisdev@gmail.com"
+          git config --global user.name "erikagalvisdev"
           git checkout gh-pages
           cp -r ./* ..  # Copia todos los archivos a la carpeta raíz
           git add .
