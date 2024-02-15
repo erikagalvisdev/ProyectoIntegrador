@@ -1,4 +1,7 @@
 //1) Lista de productos ---//
+
+import  productList from "../utils/productsList";
+
 const productos = [
   {
     id: 1,
@@ -259,7 +262,7 @@ const calcularPrecioTotal = (productos) => {
 };
 
 const precioTotal = calcularPrecioTotal(listaDeprueba);
-//console.log(`El precio total de los productos es: ${precioTotal}`);
+//console.log(`El precio total de los productos es: ${precioTotal}`);//
 
 // Se agrega HTML dinamico
 
@@ -278,15 +281,17 @@ const insertarProductos = (contenedor, listaProductos) => {
   });
 };
 
+// Id
+
 insertarProductos(document.querySelector(".galeria1"), productos);
 
-const botones = document.querySelectorAll(".boton")
+const botones = document.querySelectorAll(".boton");
 
-botones.forEach((boton)=>{
-    boton.addEventListener('click', (e)=>{
-      console.log(e.target.id, "ID DEL BOTON")
-    })
-})
+botones.forEach((boton) => {
+  boton.addEventListener("click", (e) => {
+    window.location.href = `details.html?id=${e.target.id}`;
+  });
+});
 
 //Filtro por tipo de productos
 let botonesFiltro = document.querySelectorAll(".boton-all");
@@ -334,7 +339,7 @@ const ordenarAscendente = (productos) =>
 const ordenarDescendente = (productos) =>
   productos.sort((a, b) => b.precioUnitario - a.precioUnitario);
 document.getElementById("ordenarSelector").addEventListener("change", (e) => {
-  console.log(e.target.value);
+  //console.log(e.target.value);//
 
   let ordenamiento = [];
   switch (e.target.value) {
@@ -347,9 +352,8 @@ document.getElementById("ordenarSelector").addEventListener("change", (e) => {
       break;
 
     default:
-      ordenamiento=productos
+      ordenamiento = productos;
       break;
   }
-  console.log(ordenamiento); //llamar la funcion con la que pintamos los productos en la pagina y le pasamos el ordenamientro 
-
+  //console.log(ordenamiento); //llamar la funcion con la que pintamos los productos en la pagina y le pasamos el ordenamientro
 });
