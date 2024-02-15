@@ -22,6 +22,8 @@ const printDetailsProduct = (product) => {
   precioUni.innerText = product.precioUnitario;
 };
 
+
+
 document.addEventListener("DOMContentLoaded", async () => {
   const url = `${URL_BASE}productos`;
   const selectedProduct = await getProduct(url, idCard);
